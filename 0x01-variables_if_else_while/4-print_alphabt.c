@@ -12,6 +12,9 @@ int main(void)
 
 	while (i <= 'z')
 	{
+		if (i == 'e' || i == 'q')
+			i++;
+
 		putchar(i);
 		i++;
 	}
