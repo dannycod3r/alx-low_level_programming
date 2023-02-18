@@ -25,7 +25,8 @@ int main(void)
 			{
 				putchar(i); /* tens digit*/
 				putchar(j); /* ones digit*/
-				if (!(i==56 && j==57)){
+				if (!(i == 56 && j == 57))
+				{
 					putchar(',');
 					putchar(' ');
 				}
