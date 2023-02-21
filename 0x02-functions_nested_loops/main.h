@@ -4,4 +4,7 @@
 /*_putchar*/
 int _putchar(int);
 
+/*print alphabets*/
+void print_alphabet(void);
+
 #endif
