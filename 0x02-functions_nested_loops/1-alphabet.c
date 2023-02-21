@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * main - program entry
+ * print_alphabet - program entry
  *
  * Description:
  * Return: 0
  */
 
-int print_alphabet(void)
+print_alphabet(void)
 {
 	int i;
 
