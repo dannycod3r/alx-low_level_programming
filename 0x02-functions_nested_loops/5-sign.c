@@ -2,7 +2,7 @@
 /**
  * print_sign - program entry
  *
- * @n - number
+ * @n: number
  * Description:
  * Return: 0
  */
