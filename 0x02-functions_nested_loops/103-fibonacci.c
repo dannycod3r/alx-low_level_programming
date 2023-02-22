@@ -12,7 +12,7 @@ int main(void)
 	int c;
 	int sum;
 
-	for (b = 2; b <= 4000000; b++)
+	for (c = 0; c < 4000000; b++)
 	{
 		c = a + b;
 		a = b;
