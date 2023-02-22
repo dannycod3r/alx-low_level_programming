@@ -22,4 +22,7 @@ int print_sign(int n);
 /*abs*/
 int _abs(int);
 
+/*print last digit*/
+int print_last_digit(int);
+
 #endif
