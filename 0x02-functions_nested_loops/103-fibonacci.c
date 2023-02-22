@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	int a = 1;
-	int b;
-	int c = 0;
-	int sum = 0;
+	int a = 0;
+	int b= 1;
+	int c;
+	int sum;
 
 	for (b = 2; b <= 4000000; b++)
 	{
