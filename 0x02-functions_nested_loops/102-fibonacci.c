@@ -14,7 +14,7 @@ int main(void)
 	long int c = a + b; /*third number */
 
 	printf("%lu, %lu, ", a, b);
-	for (i = 2; i <= 50; i++)
+	for (i = 4; i <= 50; i++)
 	{
 		if (i != 50)
 		{
