@@ -3,7 +3,7 @@
 
 /**
  * num_length - returns the lenth of string
- * @num : operand number
+ * @n: operand number
  * Return: number of digits
  */
 
@@ -41,7 +41,8 @@ int main(void)
 		if (ao > 0)
 			printf("%lu", ao);
 		initial0s = num_length(mx) - 1 - num_length(a);
-		while (ao > 0 && initial0s > 0) {
+		while (ao > 0 && initial0s > 0)
+		{
 			printf("%i", 0);
 			initial0s--;
 		}
