@@ -28,4 +28,7 @@ int print_last_digit(int);
 /* 24 hours */
 void jack_bauer(void);
 
+/*times*/
+void times_table(void);
+
 #endif
