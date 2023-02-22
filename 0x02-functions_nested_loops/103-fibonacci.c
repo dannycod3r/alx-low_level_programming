@@ -18,8 +18,8 @@ int main(void)
 			sum = sum + b;
 		c = b;
 		b = b + a;
-		a = c
+		a = c;
 	}
-	printf("%d\n", sum)
+	printf("%d\n", sum);
 	return (0);
 }
