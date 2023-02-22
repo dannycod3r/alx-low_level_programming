@@ -1,52 +1,50 @@
 #include "main.h"
 
 /**
- *  void times_table(void);
+ * times_table - program entry
  *
  * Description:
  * Return: 0
  */
-void times_table (void)
+void times_table(void)
 {
-	int a;
-	int b;
-	int c;
+	int i;
+	int j;
+	int k;
 
-	for (a = 0; a <= 9; a++)
+	for (i = 0; i <= 9; i++)/* first iteration*/
 	{
-		for (b = 0; b <= 9; b++)
+		for (j = 0; j <= 9; j++)
 		{
-			c = a * b;
-			if ((c / 10) == 0)
+			k = i * j; /*result of ij*/
+			if ((k / 10) == 0)
 			{
-				if (b == 0)
+				if (j == 0)
 				{
-					_putchar ('0');
+					_putchar('0');
 				}
-
-				if (b != 0)
+				if (j != 0)
 				{
-					_putchar (' ');
-					_putchar ((c % 10) + '0');
+					putchar(' ');
+					putchar((k % 10) + '0');
 				}
-				if (b < 9)
+				if (j < 9)
 				{
-					_putchar (',');
-					_putchar (' ');
+					putchar(',');
+					putchar(' ');
 				}
 			}
 			else
 			{
-				_putchar ((c / 10) + '0');
-				_putchar ((c % 10) + '0');
-				if (b < 9)
+				putchar((k / 10) + '0');
+				putchar((k % 10) + '0');
+				if (j < 9)
 				{
-					_putchar (',');
-					_putchar (' ');
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
-
-		_putchar ('\n');
+		_putchar('\n');
 	}
 }
