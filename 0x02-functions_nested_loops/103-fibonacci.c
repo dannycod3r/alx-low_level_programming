@@ -14,11 +14,12 @@ int main(void)
 
 	for (b = 2; b <= 4000000; b++)
 	{
+		c = a + b;
+		a = b;
+		b = c;
 		if (b % 2 == 0)
-			sum = sum + b;
-		c = b;
-		b = b + a;
-		a = c;
+			sum = sum + c;
+
 	}
 	printf("%d\n", sum);
 	return (0);
