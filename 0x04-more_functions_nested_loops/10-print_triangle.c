@@ -18,7 +18,7 @@ void print_triangle(int size)
 	{
 		for (col = 0; col < size; col++)
 		{
-			tsize = size - l - 1;
+			tsize = size - line - 1;
 			if (col < tsize)
 			{
 				_putchar(' ');
