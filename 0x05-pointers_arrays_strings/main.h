@@ -10,4 +10,10 @@ void reset_to_98(int *n);
 /*swap the values of two integers*/
 void swap_int(int *a, int *b);
 
+/*string length*/
+int _strlen(char *s);
+
+/*puts*/
+void _puts(char *str);
+
 #endif
