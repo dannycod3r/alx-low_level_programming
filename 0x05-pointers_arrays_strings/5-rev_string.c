@@ -1,5 +1,5 @@
 /**
- * print_rev - reverse the string in a char pointer
+ * rev_string - reverse the string in a char pointer
  * @s: character pointer
  */
 void rev_string(char *s)
