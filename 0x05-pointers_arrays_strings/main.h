@@ -28,4 +28,6 @@ void puts2(char *str);
 /*print the last half of the string*/
 void puts_half(char *str);
 
+int _strlen(char *s)
+
 #endif
