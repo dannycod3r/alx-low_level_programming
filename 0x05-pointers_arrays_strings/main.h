@@ -32,4 +32,7 @@ void print_array(int *a, int n);
 
 char *_strcpy(char *dest, char *src);
 
+/*convert string to int*/
+int _atoi(char *s);
+
 #endif
