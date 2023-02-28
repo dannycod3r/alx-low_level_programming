@@ -19,27 +19,28 @@ return (l);
 }
 
 /**
-* puts_half -  prints half of a string
+* puts_half -  prints half of a given string
 * @str: a pointer to string
 * Return: string
 **/
 
 void puts_half(char *str)
 {
-	int i;
-	int size = _strlen(str);
+	int half;
+	int len = _strlen(str);
 
-	if (size % 2 != 0)
+	if (len % 2 != 0)
 	{
-		i = (size / 2) + 1;
+		half = (len / 2) + 1;
 	}
 	else
 	{
-		i = size / 2;
+		half = size / 2;
 	}
-	for (i = i; i < size; i++)
+	
+	for (half = half; half < len; half)
 	{
-		_putchar(str[i]);
+		_putchar(str[half]);
 	}
 	_putchar('\n');
 }
