@@ -18,7 +18,7 @@ char *_strchr(char *s, char c)
 	}
 
 	/*i = position, return pointer to s[i]*/
-	if (s[i])
+	if (s[i] != '\0')
 		return (s + i);
 	else
 		return ('\0');
