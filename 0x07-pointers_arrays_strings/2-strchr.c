@@ -13,7 +13,7 @@ char *_strchr(char *s, char c)
 	i = 0;
 	while (s[i] != '\0')/*find the length of the str*/
 		i++;
-
+	i++;
 
 	for (j = 0; j <= i; j++) /*check if char c is in s*/
 	{
