@@ -9,10 +9,11 @@ char *_strchr(char *s, char c)
 {
 	int i;
 
+	i = 0;
 	while (s[i] != '\0') /*check if char c is in s*/
 	{
 		if (s[i] == c) /*if found jump from the loop*/
-			break;
+			return (s + i);
 
 		i++;
 	}
