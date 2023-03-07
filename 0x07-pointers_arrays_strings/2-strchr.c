@@ -7,23 +7,19 @@
  */
 char *_strchr(char *s, char c)
 {
-	unsigned int i;
-	unsigned int j;
+	int i;
 
-	i = 0;
-	while (s[i] != '\0')/*find the length of the str*/
-		i++;
-	i++;
-
-	for (j = 0; j <= i; j++) /*check if char c is in s*/
+	while (s[i] != '\0') /*check if char c is in s*/
 	{
-		if (s[j] == c) /*if found jump from the loop*/
+		if (s[i] == c) /*if found jump from the loop*/
 			break;
+
+		i++;
 	}
 
 	/*i = position, return pointer to s[i]*/
-	if (s[j] != '\0')
-		return (s + j);
+	if (s[i] != '\0')
+		return (s + i);
 	else
 		return ('\0');
 }
