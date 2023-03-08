@@ -10,9 +10,9 @@ char *_strchr(char *s, char c)
 	int i;
 
 	i = 0;
-	while (s[i] != '\0' && s[i] != c) /*check if char c is in s*/
+	/*check if char c is in s while not at end of s*/
+	while (s[i] != '\0' && s[i] != c)
 		i++;
-
 
 	/*i = position, return pointer to s[i]*/
 	if (s[i] == c)
