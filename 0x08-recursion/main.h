@@ -19,4 +19,8 @@ int factorial(int n);
 /*exponent of x to the power y :> x^y*/
 int _pow_recursion(int x, int y);
 
+/*sqrt*/
+int _sqrt_recursion(int n);
+int _sqrt(int n, int i);
+
 #endif
