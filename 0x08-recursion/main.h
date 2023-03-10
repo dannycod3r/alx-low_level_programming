@@ -32,4 +32,7 @@ int is_palindrome(char *s);
 int _strlen_recursion(char *s);
 int comparator(char *s, int n1, int n2);
 
+/*compare recursive*/
+int wildcmp(char *s1, char *s2);
+
 #endif
