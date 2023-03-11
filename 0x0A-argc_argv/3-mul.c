@@ -10,7 +10,7 @@
 int main(int  argc, char *argv[])
 {
 	int i; /*iterator*/
-	int mult = 0;
+	int mult = 1;
 
 	if (argc > 1)
 	{
