@@ -8,16 +8,24 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int i, j = 0, t_size;
+	unsigned int a, b, i, j = 0, t_size;
 	char *concat;
 
 	if (s1 == NULL)
-		return (NULL);
+		s1 = "";
 	if (s2 == NULL)
-		return (NULL);
+		s2 = "";
 
-	t_size = get_size(s1) + get_size(s2);
-	concat = malloc(sizeof(char) * t_size);
+	a = 0;
+	while (s1[a] != '\0')
+		a++;
+	b = 0;
+	while (s2[b] != '\0')
+		b++;
+
+	t_size = a + b;
+	/*plus 1 for the null terminator*/
+	concat = malloc(sizeof(char) * (t_size + 1));
 
 	if (concat == NULL)
 		return (NULL);
@@ -28,24 +36,4 @@ char *str_concat(char *s1, char *s2)
 		concat[j++] = s2[i];
 
 	return (concat);
-}
-
-
-/**
- * get_size - get the size of a null terminated string
- * @s: string
- * Return: size minus the null termination
- */
-int get_size(char *s)
-{
-	unsigned int i;
-
-	i = 0;
-	if (s == NULL)
-		return (0);
-
-	while (s[i] != 0)
-		i++;
-
-	return (i);
 }
