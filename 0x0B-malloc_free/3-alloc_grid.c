@@ -37,6 +37,7 @@ int **alloc_grid(int width, int height)
 
 
 	} /*endfor*/
-	return (iid_arr);
 
+	return (iid_arr);
+	free(iid_arr);
 }
