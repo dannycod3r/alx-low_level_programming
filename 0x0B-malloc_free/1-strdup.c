@@ -15,15 +15,15 @@ char *_strdup(char *str)
 
 	/*strlen*/
 	j = 0;
-	while (str[j] != 0)
-		j++;
+	while (str[j] != 0)/*ALX SE\0*/
+		j++; /*will give str minus null terminator*/
 
-	n_str = malloc(sizeof(char) * j);
+	n_str = malloc(sizeof(char) * (j+1));
 
 	if (n_str == NULL)
 		return (NULL);
 
-	for (i = 0; i < (sizeof(char) * j); i++)
+	for (i = 0; i < (sizeof(char) * (j+1)); i++)
 		n_str[i] = str[i];
 
 	n_str[j] = 0;
