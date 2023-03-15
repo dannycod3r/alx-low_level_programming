@@ -7,18 +7,25 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int i;
+	unsigned int i, j;
 	char *n_str;
 
-	/*size of the string*/
-	n_str = malloc(sizeof(char) * 8);
+	if (str == NULL)
+		return (NULL);
+
+	/*strlen*/
+	j = 0;
+	while (str[j] != 0)
+		j++;
+
+	n_str = malloc(sizeof(char) * j);
 
 	if (n_str == NULL)
 		return (NULL);
 
-	for (i = 0; i < sizeof(char) * 8; i++)
+	for (i = 0; i < (sizeof(char) * j); i++)
 		n_str[i] = str[i];
 
+	n_str[j] = 0;
 	return (n_str);
-	free(n_str);
 }
