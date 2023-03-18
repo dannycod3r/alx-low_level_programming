@@ -33,18 +33,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (nstr == NULL)
 		return (NULL);
 
+	j = 0;
 	for (i = 0; s1[i]; i++)
 		nstr[j++] = s1[i];
-	if (n >= b)/*bytes wanted is greater than b*/
+
+	if (n >= b)
 	{
 		for (i = 0; s2[i]; i++)
 			nstr[j++] = s2[i];
 	}
-	else /*use n number of bytes*/
+	else
 	{
 		for (i = 0; i < n; i++)
 			nstr[j++] = s2[i];
 	}
+
 	nstr[j] = '\0';
 
 	return (nstr);
