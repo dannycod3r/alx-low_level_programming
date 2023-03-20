@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 /**
- *
- *
+ * main - program that prints filename
+ * Return: EXIT_SUCCESS
  */
 int main(void)
 {
