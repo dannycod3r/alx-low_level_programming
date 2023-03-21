@@ -19,4 +19,7 @@ struct dog
 /* initialize a variable of type struct dog*/
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
+/* print dog */
+void print_dog(struct dog *d);
+
 #endif
