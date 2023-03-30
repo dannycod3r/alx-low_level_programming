@@ -3,6 +3,10 @@
 
 /*size_t, printf*/
 #include <stdio.h>
+/*strdup*/
+#include <string.h>
+/*malloc*/
+#include <stdlib.h>
 
 /**
  * struct list_s - singly linked list
@@ -24,5 +28,8 @@ size_t print_list(const list_t *h);
 
 /*return the number of elements in a linked list*/
 size_t list_len(const list_t *h);
+
+/* return the address of a newly created node */
+list_t *add_node(list_t **head, const char *str);
 
 #endif
