@@ -35,4 +35,7 @@ list_t *add_node(list_t **head, const char *str);
 /*return the address a newly added node at the end of the list*/
 list_t *add_node_end(list_t **head, const char *str);
 
+/*free malloc after using linked list*/
+void free_list(list_t *head);
+
 #endif
