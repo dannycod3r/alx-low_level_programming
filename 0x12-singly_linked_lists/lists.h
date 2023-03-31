@@ -38,4 +38,7 @@ list_t *add_node_end(list_t **head, const char *str);
 /*free malloc after using linked list*/
 void free_list(list_t *head);
 
+/*print first before main*/
+void print_first(void) __attribute__((constructor));
+
 #endif
