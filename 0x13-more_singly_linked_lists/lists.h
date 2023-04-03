@@ -21,4 +21,7 @@ typedef struct listint_s
 /*print all elements in a linked list*/
 size_t print_listint(const listint_t *h);
 
+/*get the length of a linked list*/
+size_t listint_len(const listint_t *h);
+
 #endif
