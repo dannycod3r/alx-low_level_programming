@@ -41,4 +41,7 @@ void free_listint2(listint_t **head);
 /*remove the head node of a linked list*/
 int pop_listint(listint_t **head);
 
+/*get the element at a particular node*/
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
+
 #endif
