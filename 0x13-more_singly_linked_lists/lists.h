@@ -44,4 +44,7 @@ int pop_listint(listint_t **head);
 /*get the element at a particular node*/
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 
+/* sum the data in linked list*/
+int sum_listint(listint_t *head);
+
 #endif
