@@ -38,4 +38,7 @@ void free_listint(listint_t *head);
 /*free a list, set head to null*/
 void free_listint2(listint_t **head);
 
+/*remove the head node of a linked list*/
+int pop_listint(listint_t **head);
+
 #endif
