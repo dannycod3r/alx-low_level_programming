@@ -12,5 +12,7 @@ int _putchar(char c);
 /*convert a binary number to unsigned int*/
 unsigned int binary_to_uint(const char *b);
 
+/*convert integer to binary*/
+void print_binary(unsigned long int n);
 
 #endif
