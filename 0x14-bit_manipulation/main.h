@@ -24,4 +24,7 @@ int set_bit(unsigned long int *n, unsigned int index);
 /*set the bit at a given index to 0*/
 int clear_bit(unsigned long int *n, unsigned int index);
 
+/*flip bits*/
+unsigned int flip_bits(unsigned long int n, unsigned long int m);
+
 #endif
