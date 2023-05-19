@@ -17,6 +17,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	temp->n = n;
 	temp->next = NULL;
 
+	/*check empty list*/
 	if (*head == NULL)
 	{
 		*head = temp;
