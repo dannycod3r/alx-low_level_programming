@@ -1,49 +1,47 @@
 #include "lists.h"
 
 /**
- * delete_dnodeint_at_index - Deletes the node at a given index of a list.
- * @head: Pointer to the pointer to the head of the doubly linked list.
- * @index: Index to delete from, starting from 0.
- *
- * Return: 1 on success or -1 on failure.
+ * delete_dnodeint_at_index - deletes the node at given index of a list
+ * @head: pointer to head of the list
+ * @index: index to delete from, starting from 0
+ * Return: 1 on success or -1 on failure
  **/
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	unsigned int count = 1;
-	dlistint_t *tmp = (*head)->next;
+	unsigned int count;
+	dlistint_t *tmp;
 
 	if (*head == NULL || head == NULL)
-		return (-1);
-
+	return (-1);
 	if (index == 0)
 	{
-		dlistint_t *tmp = *head;
+		tmp = *head;
 		*head = (*head)->next;
 		if (*head)
 			(*head)->prev = NULL;
-		free(tmp);
+		free(tmp), tmp = NULL;
 		return (1);
 	}
-
-	while (tmp && tmp->next)
+	count = 1, tmp = (*head)->next;
+	if (tmp)
 	{
-		if (index == count)
+		while (tmp->next)
 		{
-			tmp->prev->next = tmp->next;
-			tmp->next->prev = tmp->prev;
-			free(tmp);
-			return (1);
+			if (index == count)
+			{
+				tmp->prev->next = tmp->next;
+				tmp->next->prev = tmp->prev;
+				free(tmp), tmp = NULL;
+				return (1);
+			}
+			count++, tmp = tmp->next;
 		}
-		count++;
-		tmp = tmp->next;
 	}
-
 	if (tmp && index == count)
 	{
 		tmp->prev->next = NULL;
 		free(tmp);
 		return (1);
 	}
-
 	return (-1);
 }
