@@ -1,5 +1,5 @@
 #ifndef _DLIBRARY_H_
-#define DLIBRARY_H_
+#define _DLIBRARY_H_
 
 #include <stdlib.h>
 
