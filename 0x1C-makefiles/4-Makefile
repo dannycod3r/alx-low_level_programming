@@ -4,7 +4,7 @@ CC = gcc  # compiler
 
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-SRC = $(wildcard *.c)  # source files all c files
+SRC = main.c school.c  # source files all c files
 
 OBJ = $(SRC:.c=.o)   # corresponding object files
 
