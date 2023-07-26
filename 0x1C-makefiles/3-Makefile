@@ -1,14 +1,14 @@
 .PHONY: clean oclean fclean re
 
-CC := gcc  # compiler
+CC = gcc  # compiler
 
-SRC := $(wildcard *.c)  # source files all c files
+SRC = $(wildcard *.c)  # source files all c files
 
-OBJ := $(SRC:.c=.o)   # corresponding object files
+OBJ = $(SRC:.c=.o)   # corresponding object files
 
-NAME := school
+NAME = school
 
-RM := rm -f  # the program to delete files
+RM = rm -f  # the program to delete files
 
 all: $(NAME)
 
