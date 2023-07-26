@@ -1,6 +1,6 @@
-CC := gcc  # compiler to be used
+CC := gcc
 
-SRC := main.c school.c  # source files
+SRC := main.c school.c
 
 all: school
 
